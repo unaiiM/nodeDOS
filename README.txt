@@ -4,7 +4,7 @@
 1.Install git:
 	$sudo apt-get install git
 2.Clone repositoy:
-	$sudo git clone url
+	$sudo git clone https://github.com/unaiiM/nodeDDOS.git
 ------------------------------
 	Installation
 ------------------------------
