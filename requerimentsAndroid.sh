@@ -3,7 +3,7 @@ echo "
 Installing node
 ----------------
 "
-pkg install node
+pkg install nodejs
 echo "
 ----------------
      Finish
