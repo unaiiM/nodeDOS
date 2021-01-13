@@ -9,9 +9,11 @@ let requests = 0;
 let imprimir = 10;
 let error_;
 let msg = `
-------------------------------
-	DDOS by Unai
-------------------------------
+-------------------------------
+	  DDOS by Unai
+
+Follow me on Instagram: unaii_m
+-------------------------------
 `;
 function httpsdos(url_, intensidad, port){
 	var options = {
