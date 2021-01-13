@@ -96,10 +96,10 @@ rl.question("Url: ", function(url){
 		rl.question("Intensidad(ms): ", function(intensidad){			
 				rl.question("(1)http | (2)https: ", function(number){
 					if(number === "1"){
-						httpddos(url, intensidad, port_);
+						httpdos(url, intensidad, port_);
 					}
 					else if(number === "2"){
-						httpsddos(url, intensidad, port_);
+						httpsdos(url, intensidad, port_);
 					}
 				})
 			})
