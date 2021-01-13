@@ -17,6 +17,12 @@ Installing node...
 "
 sudo apt-get install nodejs
 echo "
+--------------
+Insalling npm
+--------------
+"
+sudo apt-get install npm
+echo "
 ------------------
 Installing modules
 ------------------
