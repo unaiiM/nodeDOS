@@ -68,7 +68,7 @@ function httpdos(url_, intensidad, port){
 	}, intensidad)				
 }
 console.log(msg);
-rl.question("Url: ", function(url){
+rl.question("Url(www.example.com): ", function(url){
 	rl.question("You want to put a port?(y/n): ", function(qport){
 		let next = "no";
 		let port_;
