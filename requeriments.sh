@@ -15,7 +15,7 @@ echo "
 Installing node...
 ------------------
 "
-sudo apt-get install node
+sudo apt-get install nodejs
 echo "
 ------------------
 Installing modules
