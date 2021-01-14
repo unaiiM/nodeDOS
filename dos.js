@@ -9,6 +9,13 @@ let requests = 0;
 let rimprimir = 10;
 let errors = 0;
 let eimprimir = 10;
+let msg = `
+----------------------------------
+       DOS created by Unai
+follow me on instagram: @unaii_m
+----------------------------------
+`;
+console.log(msg);
 function httpdos(url){
         console.log(`DOS started to ${url}`);
         let interval = setInterval(function(){
