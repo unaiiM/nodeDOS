@@ -35,7 +35,8 @@ function httpsdos(url_, intensidad, port){
 			}
 		})
 		req.on('error', error => {
-			if(errors === eimprimir){
+			 errors++;
+                         if(errors === eimprimir){
                                  error_ = error;
                                  eimprimir = eimprimir + 10;
 			         console.log(`(${errors}) Errors, web is down or other error ocurred`)
@@ -65,6 +66,7 @@ function httpdos(url_, intensidad, port){
 		        } 
 		}) 
 	        req.on('error', error => {
+                        errors++;
                         if(errors === eimprimir){
                                  error_ = error;
                                  eimprimir = eimprimir + 10;
