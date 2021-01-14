@@ -12,7 +12,7 @@ let imprimir = 10;
 let error_;
 let msg = `
 -------------------------------
-	  DDOS by Unai
+	  DOS by Unai
 
 Follow me on Instagram: unaii_m
 -------------------------------
