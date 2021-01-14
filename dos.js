@@ -31,8 +31,8 @@ function httpdos(url){
                 if(errors === eimprimir){
                     console.log(`(${errors}) Erros ocurred! This is because web is down or other thing`);
                     eimprimir = eimprimir + 10;
+                    //return clearInterval(interval);
                 }
-                //return clearInterval(interval);
             })
             req.end()
         }, 0)
