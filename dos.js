@@ -6,7 +6,7 @@ const rl = readline.createInterface({
 const https = require("https");
 const http = require("http");
 let errors = 0;
-let ierrors = 10;
+let eimprimir = 10;
 let requests = 0;
 let imprimir = 10;
 let error_;
